@@ -2,7 +2,7 @@
 
 The ArduLab board is a robotic platform designed for the ICAI Technological Campus. It has been created with educational purposes for developing robotic proyects based on de [Arduino](https://www.arduino.cc) environment.
 
-![ArduLab](http://spacediy.es/wp-content/uploads/2017/12/Ilustration.gif)
+![ArduLab](http://spacediy.es/wp-content/uploads/2017/12/Top.jpg)
 
 It consist on:
 * An Atmega32U4 microcontroller (same as Arduino Leonardo)
