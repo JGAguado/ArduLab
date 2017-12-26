@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17247,6 +17247,11 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="67.31" y1="129.54" x2="67.31" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="120.65" y1="127" x2="107.95" y2="127" width="0.1524" layer="91"/>
+<label x="107.95" y="127" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="EP"/>
 </segment>
 </net>
 <net name="VCC" class="0">
