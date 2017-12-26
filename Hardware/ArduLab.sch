@@ -1413,6 +1413,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pad name="6" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="7" x="3.81" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="8" x="3.81" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-5.08" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-5.08" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-4.064" y1="-1.524" x2="-3.556" y2="-1.016" layer="51"/>
 <rectangle x1="-4.064" y1="1.016" x2="-3.556" y2="1.524" layer="51"/>
@@ -1488,7 +1489,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
 <pad name="1" x="-1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="2" x="1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<text x="-2.6162" y="1.8288" size="1.27" layer="27" ratio="10">&gt;NAME</text>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
@@ -6912,14 +6913,14 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
 <wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
 <wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-0.55" y1="-0.5" x2="0.55" y2="-0.5" width="0.1016" layer="51" curve="95.452622"/>
+<wire x1="-0.55" y1="-0.5" x2="0.55" y2="-0.5" width="0.1016" layer="21" curve="95.452622"/>
 <wire x1="-0.55" y1="-0.5" x2="-0.55" y2="0.5" width="0.1016" layer="51" curve="-84.547378"/>
-<wire x1="-0.55" y1="0.5" x2="0.55" y2="0.5" width="0.1016" layer="51" curve="-95.452622"/>
+<wire x1="-0.55" y1="0.5" x2="0.55" y2="0.5" width="0.1016" layer="21" curve="-95.452622"/>
 <wire x1="0.55" y1="0.5" x2="0.55" y2="-0.5" width="0.1016" layer="51" curve="-84.547378"/>
 <smd name="A" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
 <smd name="C" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="0" y="1.905" size="1.016" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-1.905" size="1.016" layer="27" align="center">&gt;VALUE</text>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="21"/>
 <rectangle x1="0.45" y1="-0.7" x2="0.8" y2="-0.45" layer="51"/>
 <rectangle x1="0.8" y1="-0.7" x2="0.9" y2="0.5" layer="51"/>
@@ -6927,14 +6928,6 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 <rectangle x1="-0.9" y1="-0.7" x2="-0.8" y2="0.5" layer="51"/>
 <rectangle x1="-0.9" y1="0.55" x2="-0.8" y2="0.7" layer="51"/>
 <rectangle x1="0.45" y1="-0.7" x2="0.6" y2="-0.45" layer="21"/>
-<wire x1="-0.38" y1="0.59" x2="-0.39" y2="0.59" width="0.127" layer="21"/>
-<wire x1="-0.39" y1="0.59" x2="-0.39" y2="-0.61" width="0.127" layer="21"/>
-<wire x1="-0.39" y1="-0.61" x2="-0.31" y2="-0.61" width="0.127" layer="21"/>
-<wire x1="-0.31" y1="-0.61" x2="0.29" y2="-0.01" width="0.127" layer="21"/>
-<wire x1="0.29" y1="-0.01" x2="0.29" y2="0.02" width="0.127" layer="21"/>
-<wire x1="0.29" y1="0.02" x2="-0.32" y2="0.63" width="0.127" layer="21"/>
-<wire x1="0.41" y1="0.54" x2="0.41" y2="-0.57" width="0.127" layer="21"/>
-<wire x1="0.41" y1="-0.57" x2="0.4" y2="-0.58" width="0.127" layer="21"/>
 </package>
 <package name="LD260">
 <description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
@@ -9295,10 +9288,6 @@ W = angled&lt;p&gt;
 <pad name="15" x="8.89" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="14" x="6.35" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="16" x="8.89" y="1.27" drill="1.016" shape="octagon"/>
-<text x="-9.398" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
-<text x="-10.16" y="2.921" size="1.27" layer="27" ratio="10">&gt;NAME</text>
-<text x="7.62" y="2.921" size="1.27" layer="27" ratio="10">16</text>
-<text x="0" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-6.604" y1="-1.524" x2="-6.096" y2="-1.016" layer="51"/>
 <rectangle x1="-9.144" y1="-1.524" x2="-8.636" y2="-1.016" layer="51"/>
 <rectangle x1="-4.064" y1="-1.524" x2="-3.556" y2="-1.016" layer="51"/>
@@ -9376,10 +9365,6 @@ W = angled&lt;p&gt;
 <pad name="12" x="5.08" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="13" x="7.62" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="14" x="7.62" y="1.27" drill="1.016" shape="octagon"/>
-<text x="-8.128" y="-4.191" size="1.27" layer="28" ratio="10">1</text>
-<text x="-8.89" y="2.921" size="1.27" layer="28" ratio="10">&gt;NAME</text>
-<text x="6.477" y="2.921" size="1.27" layer="28" ratio="10">14</text>
-<text x="-2.54" y="-4.191" size="1.27" layer="28" ratio="10">&gt;VALUE</text>
 <rectangle x1="-5.334" y1="-1.524" x2="-4.826" y2="-1.016" layer="51"/>
 <rectangle x1="-7.874" y1="-1.524" x2="-7.366" y2="-1.016" layer="51"/>
 <rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
@@ -9558,11 +9543,13 @@ http://www.st.com&lt;p&gt;
 <package name="SO20">
 <description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
 wide body 7.5 mm/JEDEC MS-013AC</description>
-<wire x1="6.46" y1="-3.7" x2="-6.46" y2="-3.7" width="0.2032" layer="21"/>
-<wire x1="-6.46" y1="-3.7" x2="-6.46" y2="3.7" width="0.2032" layer="21"/>
-<wire x1="-6.46" y1="3.7" x2="6.46" y2="3.7" width="0.2032" layer="21"/>
+<wire x1="6.46" y1="-3.7" x2="-6.46" y2="-3.7" width="0.2032" layer="51"/>
+<wire x1="-6.46" y1="-3.7" x2="-6.46" y2="-3.2" width="0.2032" layer="51"/>
+<wire x1="-6.46" y1="-3.2" x2="-6.46" y2="3.7" width="0.2032" layer="51"/>
+<wire x1="-6.46" y1="3.7" x2="6.46" y2="3.7" width="0.2032" layer="51"/>
 <wire x1="6.46" y1="-3.2" x2="-6.46" y2="-3.2" width="0.2032" layer="51"/>
-<wire x1="6.46" y1="3.7" x2="6.46" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="6.46" y1="3.7" x2="6.46" y2="-3.2" width="0.2032" layer="51"/>
+<wire x1="6.46" y1="-3.2" x2="6.46" y2="-3.7" width="0.2032" layer="51"/>
 <smd name="2" x="-4.445" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="13" x="3.175" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-5.715" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
@@ -9583,8 +9570,8 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <smd name="18" x="-3.175" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="19" x="-4.445" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="20" x="-5.715" y="4.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-0.015" y="1.87" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="-0.015" y="-1.64" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<text x="-5.715" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.715" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-5.9601" y1="-5.32" x2="-5.4699" y2="-3.8001" layer="51"/>
 <rectangle x1="-4.6901" y1="-5.32" x2="-4.1999" y2="-3.8001" layer="51"/>
 <rectangle x1="-3.4201" y1="-5.32" x2="-2.9299" y2="-3.8001" layer="51"/>
@@ -9605,7 +9592,6 @@ wide body 7.5 mm/JEDEC MS-013AC</description>
 <rectangle x1="-3.4201" y1="3.8001" x2="-2.9299" y2="5.32" layer="51"/>
 <rectangle x1="-4.6901" y1="3.8001" x2="-4.1999" y2="5.32" layer="51"/>
 <rectangle x1="-5.9601" y1="3.8001" x2="-5.4699" y2="5.32" layer="51"/>
-<wire x1="-6.3" y1="1.3" x2="-6.3" y2="-1.2" width="0.4064" layer="21" curve="-180"/>
 </package>
 </packages>
 <symbols>
@@ -10326,7 +10312,7 @@ Vishay IHLP
 <smd name="C" x="0" y="1.2" dx="1" dy="1.4" layer="1"/>
 <smd name="E" x="0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
 <smd name="B" x="-0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
-<text x="0.095" y="2.905" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.2286" y1="0.9112" x2="0.2286" y2="1.4954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.4954" x2="1.1684" y2="-0.9112" layer="51"/>
@@ -10484,8 +10470,8 @@ JST PH 2-pin thru-home side entry</description>
 <smd name="NC2" x="3.4" y="0" dx="3.4" dy="1.6" layer="1" rot="R90"/>
 <text x="-2.54" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
 <text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
-<text x="-2.914" y="-4.096" size="2.1844" layer="21" ratio="12" align="center">+</text>
-<text x="3.171" y="-3.796" size="2.1844" layer="21" ratio="12" align="center">-</text>
+<text x="3.336" y="-3.996" size="2.1844" layer="21" ratio="12" align="center">+</text>
+<text x="-3.279" y="-3.796" size="2.1844" layer="21" ratio="12" align="center">-</text>
 </package>
 </packages>
 <symbols>
@@ -12735,12 +12721,14 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <description>&lt;b&gt;BUZZER&lt;/b&gt;</description>
 <wire x1="3.175" y1="3.175" x2="4.445" y2="3.175" width="0.254" layer="21"/>
 <wire x1="3.81" y1="2.54" x2="3.81" y2="3.81" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="6.5" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="7.0104" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="8.001" width="0.1524" layer="21"/>
 <circle x="0" y="0" radius="1.27" width="0.1524" layer="21"/>
 <circle x="3.81" y="3.175" radius="1.27" width="0.1524" layer="21"/>
-<pad name="-" x="-3.81" y="0" drill="1.2" diameter="2.54" shape="octagon"/>
-<pad name="+" x="3.81" y="0" drill="1.2" diameter="2.54" shape="octagon"/>
-<text x="-0.635" y="-3.175" size="1.27" layer="25" ratio="10" align="center">&gt;NAME</text>
+<pad name="-" x="-3.81" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<pad name="+" x="3.81" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<text x="4.445" y="6.985" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.445" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -12978,7 +12966,8 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <circle x="0" y="0" radius="3.683" width="1.27" layer="40"/>
 <circle x="0" y="0" radius="3.556" width="1.016" layer="43"/>
 <circle x="0" y="0" radius="1.7" width="0.1524" layer="21"/>
-<pad name="B3,2" x="0" y="0" drill="3.2" diameter="5"/>
+<pad name="B3,2" x="0" y="0" drill="3.2" diameter="5.842"/>
+<text x="-1.27" y="-3.81" size="1.27" layer="48">3,2</text>
 </package>
 <package name="3,3-PAD">
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.3 mm, round</description>
@@ -15444,9 +15433,10 @@ Source: http://optoelectronics.perkinelmer.com/content/Datasheets/DTS_vt200serie
 <wire x1="0.5" y1="2" x2="0.75" y2="2.25" width="0.1016" layer="21" curve="90"/>
 <circle x="0" y="0" radius="2.8" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="2.35" width="0.2032" layer="21"/>
-<pad name="1" x="-1.3" y="0" drill="1" diameter="1.4"/>
-<pad name="2" x="1.3" y="0" drill="1" diameter="1.4"/>
-<text x="0" y="-3.81" size="1.27" layer="27" align="center">&gt;NAME</text>
+<pad name="1" x="-1.27" y="0" drill="0.8" diameter="1.4"/>
+<pad name="2" x="1.27" y="0" drill="0.8" diameter="1.4"/>
+<text x="-2.25" y="-4.25" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.75" y="3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -15526,6 +15516,7 @@ Source: http://optoelectronics.perkinelmer.com/content/Datasheets/DTS_vt200serie
 <smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
 <smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
 <smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
 </package>
@@ -15568,7 +15559,7 @@ Source: http://optoelectronics.perkinelmer.com/content/Datasheets/DTS_vt200serie
 <wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
 <smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
 <smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.143" size="1.27" layer="27" ratio="10">&gt;NAME</text>
+<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
@@ -15780,7 +15771,6 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <circle x="-2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
 <pad name="1" x="-2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
 <pad name="2" x="2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
-<text x="-5.08" y="-5.715" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.445" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
 <text x="0.635" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
 <rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
@@ -16985,7 +16975,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <attribute name="NAME" x="189.23" y="143.51" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="191.77" y="138.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="CN2" gate="G$1" x="88.9" y="157.48" rot="MR0"/>
+<instance part="CN2" gate="G$1" x="81.28" y="167.64" rot="MR90"/>
 <instance part="C25" gate="G$1" x="222.25" y="165.1"/>
 <instance part="R7" gate="G$1" x="241.3" y="149.86" rot="R90"/>
 <instance part="LED3" gate="G$1" x="241.3" y="162.56"/>
@@ -17158,7 +17148,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <wire x1="77.47" y1="154.94" x2="77.47" y2="152.4" width="0.1524" layer="91"/>
 <junction x="77.47" y="154.94"/>
 <pinref part="CN2" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="157.48" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="165.1" x2="81.28" y2="157.48" width="0.1524" layer="91"/>
 <junction x="81.28" y="157.48"/>
 </segment>
 <segment>
@@ -17449,7 +17439,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <segment>
 <pinref part="CN2" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="VBAT"/>
-<wire x1="91.44" y1="160.02" x2="63.5" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="165.1" x2="83.82" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="160.02" x2="63.5" y2="160.02" width="0.1524" layer="91"/>
 <label x="78.74" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
