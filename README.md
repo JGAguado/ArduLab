@@ -19,7 +19,7 @@ It supports the [Itead Nextion Displays](https://www.itead.cc/display/nextion.ht
 
 Repository Contents
 -------------------
-* **/Documentation** - Data sheets (.pdf)
+* **/Documentation** - Data sheets, schematics, illustrations (.pdf)
 * **/Hardware** - All Eagle design files (.brd, .sch)
 
 License Information
