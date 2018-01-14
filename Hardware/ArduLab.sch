@@ -15472,7 +15472,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+11" library="SparkFun" deviceset="3.3V" device="" value="VCC"/>
-<part name="PB2" library="Testing" deviceset="SWITCH-MOMENTARY-2" device="SMD-4" value="Reset"/>
+<part name="S4" library="Testing" deviceset="SWITCH-MOMENTARY-2" device="SMD-4" value="Reset"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-2X4" device=""/>
 <part name="C16" library="resistor" deviceset="C-US" device="C1206" value="1uF"/>
 <part name="X1" library="Discrete" deviceset="CRYSTAL*" device="'5032'" value="16MHz"/>
@@ -15506,7 +15506,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="LED4" library="led" deviceset="LED" device="SMT1206" value="Yellow"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R1206" value="330"/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
-<part name="PB1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-12MM" value="B3FS-4052P"/>
+<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD-12MM" value="B3FS-4052P"/>
 <part name="C23" library="SparkFun" deviceset="CAP_POL" device="3528-KIT" value="100uF"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C1206" value="100nF"/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
@@ -15683,7 +15683,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="GND30" gate="1" x="33.02" y="36.83"/>
 <instance part="GND32" gate="1" x="25.4" y="36.83"/>
 <instance part="P+11" gate="G$1" x="149.86" y="46.99"/>
-<instance part="PB2" gate="G$1" x="149.86" y="20.32" rot="R90"/>
+<instance part="S4" gate="G$1" x="149.86" y="20.32" rot="R90"/>
 <instance part="JP1" gate="A" x="114.3" y="41.91"/>
 <instance part="C16" gate="G$1" x="22.86" y="135.89" rot="R90"/>
 <instance part="X1" gate="X" x="36.83" y="116.84" smashed="yes" rot="R90">
@@ -15787,7 +15787,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <wire x1="149.86" y1="15.24" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="PB2" gate="G$1" pin="1"/>
+<pinref part="S4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="46.99" x2="33.02" y2="46.99" width="0.1524" layer="91"/>
@@ -15981,7 +15981,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="154.94" y="27.94" size="1.778" layer="95"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="25.4" x2="149.86" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="PB2" gate="G$1" pin="2"/>
+<pinref part="S4" gate="G$1" pin="2"/>
 <junction x="149.86" y="27.94"/>
 <wire x1="149.86" y1="27.94" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
 </segment>
@@ -16723,7 +16723,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="LED4" gate="G$1" x="29.21" y="156.21"/>
 <instance part="R6" gate="G$1" x="35.56" y="149.86" rot="R180"/>
 <instance part="GND17" gate="1" x="20.32" y="139.7"/>
-<instance part="PB1" gate="G$1" x="115.57" y="64.77" rot="R270"/>
+<instance part="S3" gate="G$1" x="115.57" y="64.77" rot="R270"/>
 <instance part="C23" gate="G$1" x="167.64" y="67.31"/>
 <instance part="C11" gate="G$1" x="157.48" y="67.31"/>
 <instance part="GND20" gate="1" x="167.64" y="53.34"/>
@@ -17009,7 +17009,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <wire x1="115.57" y1="76.2" x2="115.57" y2="69.85" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="G$1" pin="3.3V"/>
-<pinref part="PB1" gate="G$1" pin="1"/>
+<pinref part="S3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="76.2" x2="132.08" y2="69.85" width="0.1524" layer="91"/>
@@ -17212,7 +17212,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="D16" class="0">
 <segment>
-<pinref part="PB1" gate="G$1" pin="2"/>
+<pinref part="S3" gate="G$1" pin="2"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="115.57" y1="48.26" x2="115.57" y2="54.61" width="0.1524" layer="91"/>
 <wire x1="115.57" y1="54.61" x2="115.57" y2="59.69" width="0.1524" layer="91"/>
