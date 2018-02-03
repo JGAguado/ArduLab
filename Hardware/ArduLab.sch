@@ -15619,7 +15619,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="175.26" y="12.7" size="3.81" layer="94">ArduLab V1.0</text>
+<text x="175.26" y="12.7" size="3.81" layer="94">ArduLab</text>
 <text x="215.9" y="20.32" size="2.54" layer="94">Designed by J.G.Aguado</text>
 <text x="109.22" y="102.87" size="1.778" layer="96">SCK</text>
 <text x="109.22" y="100.33" size="1.778" layer="96">MOSI</text>
@@ -16725,7 +16725,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </sheet>
 <sheet>
 <plain>
-<text x="175.26" y="12.7" size="3.81" layer="94">ArduLab V1.0</text>
+<text x="175.26" y="12.7" size="3.81" layer="94">ArduLab</text>
 <text x="215.9" y="20.32" size="2.54" layer="94">Designed by J.G.Aguado</text>
 </plain>
 <instances>
