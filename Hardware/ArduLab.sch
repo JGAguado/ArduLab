@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15615,6 +15615,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="GND46" library="SparkFun" deviceset="GND" device=""/>
 <part name="U1" library="adafruit" deviceset="ATMEGA32U4" device="-AU"/>
 <part name="D3" library="diode" deviceset="DIODE-" device="SOD123" value="MBR120"/>
+<part name="R23" library="resistor" deviceset="R-US_" device="R1206" value="100k"/>
+<part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16727,6 +16729,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <plain>
 <text x="175.26" y="12.7" size="3.81" layer="94">ArduLab</text>
 <text x="215.9" y="20.32" size="2.54" layer="94">Designed by J.G.Aguado</text>
+<text x="120.142" y="119.38" size="1.27" layer="97" font="vector">Install 100k resistor for
+inductor current limit</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -16807,6 +16811,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="LED3" gate="G$1" x="95.25" y="129.54" rot="R90"/>
 <instance part="GND13" gate="1" x="227.33" y="138.43"/>
 <instance part="D3" gate="G$1" x="80.01" y="129.54"/>
+<instance part="R23" gate="G$1" x="151.13" y="120.65" rot="R270"/>
+<instance part="GND5" gate="1" x="151.13" y="110.49" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -16994,6 +17000,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="143.51" x2="208.28" y2="140.97" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="151.13" y1="113.03" x2="151.13" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -17400,6 +17411,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="77.47" y1="129.54" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="RSET"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="153.67" y1="128.27" x2="151.13" y2="128.27" width="0.1524" layer="91"/>
+<wire x1="151.13" y1="128.27" x2="151.13" y2="125.73" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -17417,4 +17436,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

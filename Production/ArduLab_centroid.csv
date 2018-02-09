@@ -1,4 +1,11 @@
-RefDes,Layer,LocationX(in),LocationY(in),Rotation
+Screaming Circuits SMD component position file.
+Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
+
+Centroid Data for pc board: "ArduLab.brd" as of: 05/02/2018 0:40:45
+Measurements are in inches. Comma delimited
+Only surface mount components included
+
+RefDes,Layer,LocationX,LocationY,Rotation
 C1,Top,1.298,1.366,90
 C2,Top,0.936,1.374,90
 C3,Bottom,2.018,0.430,270
