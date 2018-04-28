@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9417,6 +9417,42 @@ JST PH 2-pin thru-home side entry</description>
 <rectangle x1="-3.4" y1="4.95" x2="-3" y2="6.1001" layer="51"/>
 <rectangle x1="-4.1999" y1="4.95" x2="-3.8001" y2="6.1001" layer="51"/>
 </package>
+<package name="1812">
+<description>Multilayer SMD</description>
+<wire x1="-2.3" y1="0" x2="2.4" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.8004" y1="1.7113" x2="2.8004" y2="1.7113" width="0.127" layer="21"/>
+<wire x1="2.8004" y1="1.7113" x2="2.8004" y2="-1.7113" width="0.127" layer="51"/>
+<wire x1="2.8004" y1="-1.7113" x2="-2.8004" y2="-1.7113" width="0.127" layer="21"/>
+<wire x1="-2.8004" y1="-1.7113" x2="-2.8004" y2="1.7113" width="0.127" layer="51"/>
+<wire x1="-1.7" y1="0" x2="1.7" y2="0" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.07" layer="21"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.07" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.07" layer="21"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.07" layer="51"/>
+<smd name="1" x="-2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
+<smd name="2" x="2.046" y="0" dx="2.286" dy="2.794" layer="1"/>
+<text x="-1.8575" y="1.905" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.8575" y="-2.54" size="0.6096" layer="25">&gt;NAME</text>
+<rectangle x1="-0.9" y1="-0.3" x2="0.9" y2="0.3" layer="21"/>
+<rectangle x1="-0.6" y1="-0.3" x2="0.5" y2="0.3" layer="21"/>
+</package>
+<package name="R1206">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
+<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="-1.397" y="1.143" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.397" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
+<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PINHD2">
@@ -9480,6 +9516,14 @@ JST PH 2-pin thru-home side entry</description>
 <pin name="AREF" x="-22.86" y="30.48" length="middle"/>
 <pin name="GND2" x="-22.86" y="-27.94" length="middle"/>
 <pin name="GND3" x="-22.86" y="-30.48" length="middle"/>
+</symbol>
+<symbol name="FUSE">
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94" curve="-126.869898"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
+<text x="-3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9586,6 +9630,32 @@ JST PH 2-pin thru-home side entry</description>
 <connect gate="G$1" pin="VCC1" pad="34"/>
 <connect gate="G$1" pin="XTAL1" pad="17"/>
 <connect gate="G$1" pin="XTAL2" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTCFUSE" prefix="F" uservalue="yes">
+<description>PTC fuses, resettable thermistors</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="-1812" package="1812">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1206" package="R1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15617,6 +15687,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D3" library="diode" deviceset="DIODE-" device="SOD123" value="MBR120"/>
 <part name="R23" library="resistor" deviceset="R-US_" device="R1206" value="100k"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
+<part name="F1" library="adafruit" deviceset="PTCFUSE" device="-1206" value="500mA"/>
 </parts>
 <sheets>
 <sheet>
@@ -16795,24 +16866,25 @@ inductor current limit</text>
 <instance part="GND11" gate="1" x="189.23" y="120.65" rot="MR0"/>
 <instance part="GND12" gate="1" x="198.12" y="138.43" rot="MR0"/>
 <instance part="GND14" gate="1" x="208.28" y="138.43" rot="MR0"/>
-<instance part="GND15" gate="1" x="104.14" y="114.3" rot="MR0"/>
+<instance part="GND15" gate="1" x="101.6" y="101.6" rot="MR0"/>
 <instance part="U3" gate="G$1" x="166.37" y="138.43" smashed="yes">
 <attribute name="NAME" x="161.29" y="152.654" size="1.778" layer="95"/>
 <attribute name="VALUE" x="159.004" y="122.428" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="218.44" y="148.59" rot="R90"/>
 <instance part="D2" gate="G$1" x="227.33" y="148.59" rot="R90"/>
-<instance part="R7" gate="G$1" x="104.14" y="124.46" rot="R90"/>
+<instance part="R7" gate="G$1" x="101.6" y="111.76" rot="R90"/>
 <instance part="R21" gate="G$1" x="151.13" y="140.97" rot="R90"/>
 <instance part="L1" gate="G$1" x="166.37" y="156.21" rot="R90"/>
 <instance part="C10" gate="G$1" x="140.97" y="151.13"/>
 <instance part="C17" gate="G$1" x="198.12" y="146.05" rot="R180"/>
 <instance part="C21" gate="G$1" x="208.28" y="146.05" rot="R180"/>
-<instance part="LED3" gate="G$1" x="95.25" y="129.54" rot="R90"/>
+<instance part="LED3" gate="G$1" x="101.6" y="124.46"/>
 <instance part="GND13" gate="1" x="227.33" y="138.43"/>
-<instance part="D3" gate="G$1" x="80.01" y="129.54"/>
+<instance part="D3" gate="G$1" x="88.9" y="129.54"/>
 <instance part="R23" gate="G$1" x="151.13" y="120.65" rot="R270"/>
 <instance part="GND5" gate="1" x="151.13" y="110.49" rot="MR0"/>
+<instance part="F1" gate="G$1" x="78.74" y="127"/>
 </instances>
 <busses>
 </busses>
@@ -16974,7 +17046,7 @@ inductor current limit</text>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="116.84" x2="104.14" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="104.14" x2="101.6" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -17051,10 +17123,12 @@ inductor current limit</text>
 <label x="33.02" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="82.55" y1="129.54" x2="92.71" y2="129.54" width="0.1524" layer="91"/>
-<label x="87.63" y="129.54" size="1.778" layer="95"/>
+<wire x1="91.44" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
+<label x="101.6" y="133.35" size="1.778" layer="95"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="101.6" y1="129.54" x2="101.6" y2="127" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="129.54" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -17167,8 +17241,8 @@ inductor current limit</text>
 <net name="VOUT" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="R1"/>
-<wire x1="66.04" y1="132.08" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
-<label x="68.58" y="132.08" size="1.778" layer="95"/>
+<wire x1="66.04" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
+<label x="66.04" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="156.21" x2="227.33" y2="156.21" width="0.1524" layer="91"/>
@@ -17227,8 +17301,8 @@ inductor current limit</text>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="R2"/>
-<wire x1="73.66" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<label x="68.58" y="127" size="1.778" layer="95"/>
+<wire x1="71.12" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
+<label x="66.04" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -17401,14 +17475,14 @@ inductor current limit</text>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="104.14" y1="129.54" x2="100.33" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="116.84" x2="101.6" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="S1" gate="G$1" pin="RC"/>
-<wire x1="77.47" y1="129.54" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="129.54" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -17417,6 +17491,13 @@ inductor current limit</text>
 <pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="153.67" y1="128.27" x2="151.13" y2="128.27" width="0.1524" layer="91"/>
 <wire x1="151.13" y1="128.27" x2="151.13" y2="125.73" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="86.36" y1="129.54" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
