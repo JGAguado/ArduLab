@@ -16209,7 +16209,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="SV2" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="A0" class="0">
+<net name="VIN" class="0">
 <segment>
 <wire x1="90.17" y1="163.83" x2="106.68" y2="163.83" width="0.1524" layer="91"/>
 <label x="92.71" y="163.83" size="1.778" layer="95"/>
