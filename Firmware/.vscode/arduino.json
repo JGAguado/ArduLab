@@ -1,0 +1,5 @@
+{
+    "port": "COM12",
+    "board": "arduino:avr:leonardo",
+    "sketch": "examples\\Basics\\Basics.ino"
+}
