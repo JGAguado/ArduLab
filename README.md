@@ -21,6 +21,8 @@ Repository Contents
 -------------------
 * **/Documentation** - Data sheets, schematics, illustrations (.pdf)
 * **/Hardware** - All Eagle design files (.brd, .sch)
+* **/Production** - Production gerber files 
+* **/Firmware** - Example sketches and source files for the library (.ino, .cpp & .h)
 
 License Information
 -------------------
